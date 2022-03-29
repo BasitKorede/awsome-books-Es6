@@ -29,7 +29,7 @@ const displayBook = ({ title, author, id }, parentElement) => {
           <span>by</span>&nbsp;
           <p class="paragraph">${author}</p>
         </div>
-        <button id="${id}" type="button" onclick="handleRemove('${id}')" class="remove-button">Remove</button>a 
+        <button id="${id}" type="button" onclick="handleRemove('${id}')" class="remove-button">Remove</button>
       </section>`;
   parentElement.appendChild(bookListItemElement);
 };
