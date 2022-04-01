@@ -1,12 +1,9 @@
-import { exportNav } from './modules/nav-bar.js'
-import BookStore from './modules/local-storage.js'
+import exportNav from './modules/nav-bar.js';
+import { BookStore } from './modules/local-storage.js';
 import { today } from './modules/time.js';
-
 
 exportNav();
 document.getElementById('current-time').innerHTML = today;
-
-
 
 class Book {
   constructor({ title, author, id }) {
@@ -15,7 +12,6 @@ class Book {
     this.id = id;
   }
 }
-
 
 // Display book function:
 // 1. accepts an object with {id, author, title}
@@ -84,4 +80,4 @@ const handleRemove = (currentId) => {
     removeButton.parentElement.parentElement.remove();
   }
 };
-
+export default Book;
