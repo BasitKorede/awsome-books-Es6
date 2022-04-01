@@ -1,10 +1,12 @@
- import {DateTime } from './modules/luxon.min.js'
 import { exportNav } from './modules/nav-bar.js'
 import BookStore from './modules/local-storage.js'
+import { today } from './modules/time.js';
 
-exportNav()
-DateTime.now()
-DateTime.toString()
+
+exportNav();
+document.getElementById('current-time').innerHTML = today;
+
+
 
 class Book {
   constructor({ title, author, id }) {

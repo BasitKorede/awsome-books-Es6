@@ -1,4 +1,4 @@
-export default class BookStore {
+ class BookStore {
     constructor(initialData = []) {
       this.saveToLocalStorage = (data) => {
         const booksString = JSON.stringify(data);
@@ -34,3 +34,6 @@ export default class BookStore {
       return this.saveToLocalStorage(this.books);
     }
   }
+
+
+  export default BookStore;
