@@ -1,5 +1,7 @@
 import exportNav from './modules/nav-bar.js';
+// eslint-disable-next-line import/no-cycle
 import { BookStore } from './modules/local-storage.js';
+
 import { today } from './modules/time.js';
 
 exportNav();
