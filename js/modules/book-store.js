@@ -1,7 +1,7 @@
-// eslint-disable-next-line import/no-cycle
-import Book from '../index.js';
+import Book from './book.js';
 
-// eslint-disable-next-line import/prefer-default-export
+export const generateId = () => `id_${Math.random().toString(36).slice(2)}`;
+
 export class BookStore {
   constructor(initialData = []) {
     this.saveToLocalStorage = (data) => {
